@@ -441,7 +441,8 @@ def get_header_lines(
     ----------
     input_file : str | os.PathLike | io.BytesIO
         The input file path or file-like object to read. If a file path is
-        provided, the function automatically handles compressed files.
+        provided, the function automatically handles compressed file formats
+        that are supported by `~astropy.utils.data.get_readable_fileobj`. 
     encoding : str, optional
         The encoding used to decode the file content. Default is "utf-8".
 
