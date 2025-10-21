@@ -1,1 +1,3 @@
-Change ecsv reader to handle compressed data via ``utils.data``.
+Improve support for compressed file formats in the ECSV and the pyarrow CSV 
+Table readers. All formats supported  by ``astropy.utils.data.get_readable_fileobj()`` 
+(currently gzip, bzip2, lzma (xz) or lzw (Z)) will now work with these readers.
